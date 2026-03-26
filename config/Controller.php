@@ -20,7 +20,7 @@ class Controller
 
     $this->db_username = 'velloxaw_default';
     $this->db_password = 'Primestar1$';
-    $this->db_name = 'velloxaw_default';
+    $this->db_name = 'velloxaw_live';
 
     try {
       $this->conn = @new PDO("mysql:host=$this->db_server;dbname=$this->db_name", $this->db_username, $this->db_password);
