@@ -1,0 +1,94 @@
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer_bottom">
+					<!-- <ul>
+						<li><a href="?a=top10" class="btn-no-bg-white">Investors Top 10</a></li>
+						<li><a href="?a=refs10" class="btn-no-bg-white">Referrars Top 10</a></li>
+							<li><a href="?a=members_stats" class="btn-no-bg-white">Investors Stats</a></li>
+							<li><a href="?a=paidout" class="btn-no-bg-white">Paid Out</a></li>         									
+						</ul>-->
+				</div>
+
+				<div class="footer_top">
+					<div class="row">
+						<div class="col-md-4 col-sm-12">
+							<div class="quickfinder-item-title" style="padding-bottom: 0px;">Company:</div>
+							<div class="footer_inner_company" id="middle">
+								<ul>
+									<li> <i class="fas fa-barcode"></i> Velloxa Wealth</li>
+									<!--	<li>  <i class="fab fa-black-tie"></i>Company xxxxxxxx</li> -->
+									<li> <i class="fas fa-map-marker"></i>Berry & Co Sterling House, 7 Ashford Road,
+										Maidstone, Kent, England, ME14 5BJ.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12">
+							<div class="footer_inner" id="middle">
+								<a style="text-align:center;" href="./">
+									<img src="logo-new.png" height="90" style="opacity:.4;" alt="Velloxa Wealth" title="Velloxa Wealth" />
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12">
+							<div class="quickfinder-item-title" style="padding-bottom: 0px;">Contact:</div>
+							<div class="footer_inner_company" id="middle">
+								<ul>
+									<!-- <li> <i class="fas fa-mobile-alt"></i>+447957567579</li> -->
+									<li> <i class="far fa-envelope"></i>contact@velloxawealth.com</li>
+									<li> <i class="far fa-envelope"></i>velloxawealth@gmail.com</li>
+									<!--  <li id="footer_fb">  <a target="_blank" href="#"><i class="fab fa-facebook-square" style="font-weight: 100; margin-left: 10px;"></i></a>
+										<a target="_blank" href="#" ><i class="fab fa-telegram-plane" ></i></a>
+										<a target="_blank" href="#" id="telegram"> <i class="fab fa-twitter" ></i></a>
+										</li>     -->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row-title-wrapper-small">
+						<div class="title-wrapper-small title-wrapper-main-small">
+							<div class="quickfinder-item-title" style="padding-bottom: 0px;">We accept:</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="footer_bottom">
+							<ul>
+								<img src="images/pay03.png" class="alignnone dont_scale wow zoomIn" data-wow-delay=".2s">
+								<img src="images/pay06.png" class="alignnone dont_scale wow zoomIn" data-wow-delay=".8s">
+								<img src="images/pay07.png" class="alignnone dont_scale wow zoomIn" data-wow-delay="1s">
+								<img src="images/pay08.png" class="alignnone dont_scale wow zoomIn" data-wow-delay="1.2s">
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<section class="section_end_footer">
+	<div class="container">
+		<div class="row" id="footer_bottom">
+			<div class="col-md-12">
+				<div class="footer_bottom_copy">
+					Copyrights &copy; 2023.&nbsp; Velloxa Wealth. &nbsp; All Rights Reserved.</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'd57e83f0cd225ad264771ba0a3a539b07ded6f9f';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
