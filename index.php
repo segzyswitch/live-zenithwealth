@@ -556,7 +556,8 @@ $Controller = new Controller()
 <script type="text/javascript">$(document).ready(function () {
 		$(window).scroll(function () { if ($(this).scrollTop() > 200) { $('#scroller').fadeIn(); } else { $('#scroller').fadeOut(); } });
 		$('#scroller').click(function () { $('body,html').animate({ scrollTop: 0 }, 600); return false; });
-	});</script>
+	});
+</script>
 
 
 

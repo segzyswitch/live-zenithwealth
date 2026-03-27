@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="https://zenithwealthpro.com/account/assets/frontend/css/styles.css?var=2.1" />
 
 	<style>
-		//The Custom CSS will be added on the site head tag 
+		/*The Custom CSS will be added on the site head tag */
 		.site-head-tag {
 			margin: 0;
 			padding: 0;
