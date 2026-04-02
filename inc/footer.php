@@ -83,7 +83,7 @@
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
 var _smartsupp = _smartsupp || {};
-_smartsupp.key = '9c43cf87f9228647318a190bb37d201db5a625bd';
+_smartsupp.key = '9e7226ea6fd4ef6bcb8d8a6927f6b28a6c5e376e';
 window.smartsupp||(function(d) {
   var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
   s=d.getElementsByTagName('script')[0];c=d.createElement('script');
