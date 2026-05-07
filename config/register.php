@@ -7,9 +7,9 @@ ini_set('smtp_port', 465);
 $Controller = new Controller;
 $conn = $Controller->conn;
 
-if ( isset($_SESSION["moon_account_id"]) ) {
+if ( isset($_SESSION["revolut_account_id"]) ) {
   $user_info = $Controller->User();
-  $user_id = $_SESSION["moon_account_id"];
+  $user_id = $_SESSION["revolut_account_id"];
   $wallet_bal = $user_info['wallet_bal'];
 }
 // GENERATE UNIQUE ID
@@ -57,7 +57,11 @@ if ( isset($_POST["register"]) ) {
     echo 'Passwords do not match, check and try again.';
     return false;
   }
-  // validate password
+
+  // activation link
+  $activation_link = "https://live.velloxawealth.com/activate.php?token=" . $uuid;
+
+  // Insert record
   $sql = "INSERT INTO users(uuid, fname, lname, email, phone, password, alt_password, referral)
     VALUES('$uuid', '$fname', '$lname', '$email', '$phone', '$hashpwd', '$password', '$referral')
   ";
@@ -120,7 +124,7 @@ if ( isset($_POST["register"]) ) {
                       <tr>
                         <td>
                           <h4 style='color:#ccc; font-weight:700;'>Hello, ".$fname." ".$lname."</h4>
-                          <p style='font-size:14px; line-height:20px; color:#d3d3d3;'>Welcome to Velloxa Wealth platform! We're excited to have you on board. To complete your registration and activate your account, please confirm your email address by clicking the link below:</p>
+                          <p style='font-size:14px; line-height:20px; color:#d3d3d3;'>Welcome to Revolut Invests platform! We're excited to have you on board. To complete your registration and activate your account, please confirm your email address by clicking the link below:</p>
                         </td>
                       </tr>
                       <!-- Withdrawal details box -->
@@ -130,7 +134,7 @@ if ( isset($_POST["register"]) ) {
                             <!-- Dashboard button -->
                             <tr>
                               <td style='padding-top:6px;padding-bottom:15px;'>
-                                <a href='https://live.velloxawealth.com/activate-account?uuid=".$uuid."' style='display:inline-block; padding:11px 18px; border-radius:6px; background:#b88b15; color:#0b0b0b; font-weight:700; font-size:14px;'>
+                                <a href='".$activation_link."' style='display:inline-block; padding:11px 18px; border-radius:6px; background:#b88b15; color:#0b0b0b; font-weight:700; font-size:14px;'>
                                   Activate account
                                 </a>
                               </td>
@@ -138,7 +142,7 @@ if ( isset($_POST["register"]) ) {
                             <tr>
                               <td>
                                 <p style='font-size:14px; line-height:20px; color:#9a9a9a;'>If the button above doesn't work, please copy and paste the following link into your browser:</p>
-                                <p style='font-size:14px; line-height:20px; color:#efefef;'><a href='https://live.velloxawealth.com/activate-account?uuid=".$uuid."'>https://live.velloxawealth.com/activate-account?uuid=".$uuid."</a></p>
+                                <p style='font-size:14px; line-height:20px; color:#efefef;'><a href='".$activation_link."'>".$activation_link."</a></p>
                               </td>
                             </tr>
                           </table>
@@ -163,7 +167,7 @@ if ( isset($_POST["register"]) ) {
                     <table role='presentation' width='100%' cellpadding='0' cellspacing='0'>
                       <tr>
                         <td style='padding:16px 0 20px 0; font-size:11px; color:#6f6f6f; text-align:center;'>
-                          © <span id='year'>2021</span> Velloxa Wealth. All rights reserved.
+                          © <span id='year'>2021</span> Revolut Invests. All rights reserved.
                         </td>
                       </tr>
                     </table>
@@ -177,10 +181,10 @@ if ( isset($_POST["register"]) ) {
       </body>
       </html>
     ";
-    $subject = "Confirm Your Account - Velloxa Wealth";
-    $headers = "From: Velloxa Wealth <contact@velloxawealth.com>\r\n";
-    $headers .= "Reply-To: Velloxa Wealth <contact@velloxawealth.com>\r\n";
-    $headers .= "Return-Path: contact@velloxawealth.com\r\n";
+    $subject = "Confirm Your Account - Revolut Invests";
+    $headers = "From: Revolut Invests <support@velloxawealth.com>\r\n";
+    $headers .= "Reply-To: Revolut Invests <support@velloxawealth.com>\r\n";
+    $headers .= "Return-Path: support@velloxawealth.com\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
